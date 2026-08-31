@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Metrology Compliance Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Legal Metrology Compliance Checker</h1>
+        <p>Check packaged products for compliance with Legal Metrology Rules, 2011</p>
+    </header>
+
+    <main>
+        <section class="upload-container">
+
+            <h2>Scan Product Label</h2>
+
+            <p class="description">
+                Upload a clear image of the packaged product label to check compliance.
+            </p>
+
+            <div class="upload-box">
+                <div class="upload-icon">📷</div>
+                <p>Upload Product Image</p>
+
+                <input type="file" id="productImage" accept="image/*">
+            </div>
+
+            <div class="preview-container">
+                <p>Image preview will appear here</p>
+                <img id="imagePreview" src="" alt="Image Preview" style="display: none;">
+            </div>
+
+            <button id="checkButton">
+                Check Compliance
+            </button>
+
+        </section>
+
+        <section class="result-container">
+
+            <h2>Compliance Result</h2>
+
+            <div class="result-box">
+                <p>Status: <span id="statusResult">Waiting for image...</span></p>
+            </div>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
